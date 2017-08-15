@@ -1,0 +1,93 @@
+{
+    "test": "questo \u00e8 un test",
+    "common": {
+        "choose_in_combo_box": "Scegli",
+        "times": {
+            "last_month": "Mese scorso",
+            "last_hour": "Ultima ora",
+            "today": "oggi",
+            "1_hour": "1h",
+            "24_hours": "24h",
+            "48_hours": "48h",
+            "7_days": "7gg",
+            "30_days": "30gg",
+            "forever": "Per sempre",
+            "1_year": "1a",
+            "custom": "Personalizzato",
+            "live": "LIVE",
+            "last_week": "Settimana scorsa",
+            "yesterday": "Ieri"
+        },
+        "measurement_definition": {
+            "host": "host",
+            "db": "banca dati",
+            "measurement": "misurazione",
+            "field": "campo",
+            "version": "versione"
+        },
+        "months": {
+            "january": "Gennaio",
+            "february": "Febbraio",
+            "march": "Marzo",
+            "june": "Giugno",
+            "may": "Maggio",
+            "april": "Aprile",
+            "july": "Luglio",
+            "august": "Agosto",
+            "september": "Settembre",
+            "november": "Novembre",
+            "december": "Dicembre",
+            "october": "Ottobre"
+        },
+        "short_months": {
+            "jan": "Gen",
+            "feb": "Feb",
+            "mar": "Mar",
+            "jun": "Giu",
+            "may": "Mag",
+            "apr": "Apr",
+            "jul": "Lug",
+            "aug": "Ago",
+            "sep": "Set",
+            "nov": "Nov",
+            "dec": "Dic",
+            "oct": "Ott"
+        },
+        "weekdays": {
+            "sunday": "Domenica",
+            "monday": "Luned\u00ec",
+            "tuesday": "Marted\u00ec",
+            "wednesday": "Mercoled\u00ec",
+            "thursday": "Gioved\u00ec",
+            "friday": "Venerd\u00ec",
+            "saturday": "Sabato"
+        },
+        "weekdays_short": {
+            "sunday": "Dom",
+            "monday": "Lun",
+            "tuesday": "Mar",
+            "wednesday": "Mer",
+            "thursday": "Gio",
+            "friday": "Ven",
+            "saturday": "Sab"
+        },
+        "tabs": {
+            "status": "Stato",
+            "summary": "Riepilogo",
+            "analysis": "Analisi"
+        },
+        "ok": "OK",
+        "cancel": "Annulla",
+        "highcharts": {
+            "no_data_message": "Nessun dato da visualizzare"
+        }
+    },
+    "status": {
+        "first": "Primo",
+        "last": "Ultimo"
+    },
+    "user_menu": {
+        "logout": "Esci",
+        "language": "Lingua"
+    }
+}

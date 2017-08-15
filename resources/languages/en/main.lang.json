@@ -1,0 +1,82 @@
+{
+  "common": {
+    "choose_in_combo_box": "Choose",
+    "hierarchy": {
+      "country": "Country",
+      "area": "area",
+      "plant": "plant",
+      "machine": "Machine",
+      "element": "element"
+    },
+    "measurement_definition": {
+      "host": "host",
+      "db": "database",
+      "measurement": "measurement",
+      "field": "field",
+      "version": "version",
+      "thing": "thing"
+    },
+    "times": {
+      "1_hour": "1h",
+      "24_hours": "24h",
+      "48_hours": "48h",
+      "7_days": "7d",
+      "30_days": "30d",
+      "1_year": "1y",
+      "custom": "Custom",
+      "real_time": "LIVE"
+    },
+    "months": {
+      "january": "January",
+      "february": "February",
+      "march": "March",
+      "june": "June",
+      "may": "May",
+      "april": "April",
+      "july": "July",
+      "august": "August",
+      "september": "September",
+      "november": "November",
+      "december": "December",
+      "october": "October"
+    },
+    "short_months": {
+      "jan": "Jan",
+      "feb": "Feb",
+      "mar": "Mar",
+      "jun": "Jun",
+      "may": "May",
+      "apr": "Apr",
+      "jul": "Jul",
+      "aug": "Aug",
+      "sep": "Sep",
+      "nov": "Nov",
+      "dec": "Dec",
+      "oct": "Oct"
+    },
+    "weekdays": {
+      "sunday": "Sunday",
+      "monday": "Monday",
+      "tuesday": "Tuesday",
+      "wednesday": "Wednesday",
+      "thursday": "Thursday",
+      "friday": "Friday",
+      "saturday": "Saturday"
+    },
+    "weekdays_short": {
+      "sunday": "Sun",
+      "monday": "Mon",
+      "tuesday": "Tue",
+      "wednesday": "Wed",
+      "thursday": "Thu",
+      "friday": "Fri",
+      "saturday": "Sat"
+    },
+    "ok": "Ok",
+    "cancel": "Cancel",
+  },
+  "user_menu": {
+    "logout": "Logout"
+  },
+
+}

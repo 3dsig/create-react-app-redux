@@ -1,0 +1,22 @@
+.navDiv{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.fullHeader{
+    background: #303438;
+  height: 56px;
+}
+.autoCompleteContainer{
+    width : 64.35935199%;
+    margin-right:1.030927835%;
+    display : inline-block;
+}
+.logoContainer{
+    width : 15.31664212%;
+    margin-left:1.47275405%;
+    margin-right:1.030927835%;
+    margin-top: 16px;
+    display : inline-block;
+}
+
+
