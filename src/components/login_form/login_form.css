@@ -1,0 +1,84 @@
+.loginBtn {
+    /*float: none !important;*/
+    Fill: #ffffff;
+    stroke: 1px;
+    font-size: 1rem;
+    min-height: 30px;
+    text-transform : capitalize;
+    width: 90px;
+    background: #13baf6;
+    border-color: #13baf6;
+    border-radius: 4px;
+    border-style: solid;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: white;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    float: right;
+    display: block;
+    margin-top: 20px;
+    margin-right: 0;
+}
+.loginBtn:hover{
+    outline: none;
+    background-color: #0DACF6;
+}
+.loginBtn:focus{
+    outline: none;
+}
+.littleIcon{
+    /*color: white;*/
+    display : inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+.lockIcon{
+    margin-left: 6px;
+}
+.someInput{
+    border-width: 0;
+    font-size: 1rem;
+    color: #5a5a5a;
+    width: 50%;
+    vertical-align: top;
+    background-color: #f1f1f1;
+    flex: 2;
+}
+.someInput:focus{
+    outline:none;
+}
+.incorrectLogin{
+    display: block;
+    color: #DF2636;
+}
+.someInputContainer{
+    display: flex;
+}
+.someLabel{
+    font-family: 'Open Sans', sans-serif;
+    color: #5a5a5a;
+}
+.forgotPassword{
+    float: right;
+}
+.buttomButtonsDiv{
+    margin-top: 50px;
+}
+.mainForm{
+    background-color: #f1f1f1;
+    width: 60%;
+    display: inline-block;
+    text-align: left;
+}
+.lineBreak{
+    border-top-width:1px;
+    border-color: #13baf6;
+    border-style: solid;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.lineBreak:focus{
+    border-top-width: 2px;
+}
