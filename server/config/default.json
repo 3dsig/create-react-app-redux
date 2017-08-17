@@ -1,0 +1,68 @@
+{
+  "hari": {
+    "server_type": "localhost",
+    "logger": {
+      "console": {
+        "level": "silly"
+      },
+      "file": {
+        "level": "error",
+        "location": "/tmp/boo.log"
+      }
+    },
+    "authentication": {
+      "token": "d7f8g6sdfg6s87g"
+    },
+    "influxdb": {
+      "hosts": {
+        "density": {
+          "host": "density-856c6bf1.influxcloud.net",
+          "port": 8086,
+          "username": "brucelee",
+          "password": "builds422atom",
+          "ssl": true
+        },
+        "delorean": {
+          "host": "delorean-d94bca34.influxcloud.net",
+          "port": 8086,
+          "username": "yipman",
+          "password": "oS9bRpWIsRr4x8ijcWQSz9iQzIvp",
+          "ssl": true
+        }
+      },
+      "port": 8086,
+      "dbs": {
+        "io_stat": "io_stat",
+        "cuts_12": "cuts_12",
+        "analysis_2": "analysis_2",
+        "fx_2": "fx_2"
+      }
+    },
+    "http_server": {
+      "port": 8080
+    },
+    "mongodb": {
+      "real_things_collection_to_use": "real_things_internal",
+      "dbs": {
+        "boo": {
+          "host": "booandothers-shard-00-00-tnjmp.mongodb.net:27017,booandothers-shard-00-01-tnjmp.mongodb.net:27017,booandothers-shard-00-02-tnjmp.mongodb.net:27017",
+          "db": "boo_monitoring",
+          "user": "brucelee",
+          "password": "WKzBeiwZoh6GDjRu",
+          "replicaset": "BooAndOthers-shard-0",
+          "ssl": "true",
+          "authsource": "admin"
+        },
+        "realthings": {
+          "host": "booandothers-shard-00-00-tnjmp.mongodb.net:27017,booandothers-shard-00-01-tnjmp.mongodb.net:27017,booandothers-shard-00-02-tnjmp.mongodb.net:27017",
+          "db": "real_things",
+          "user": "brucelee",
+          "password": "WKzBeiwZoh6GDjRu",
+          "replicaset": "BooAndOthers-shard-0",
+          "ssl": "true",
+          "authsource": "admin"
+        }
+      }
+    }
+  }
+}
