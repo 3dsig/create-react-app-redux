@@ -33,7 +33,7 @@ export const userSelectedOrDefaultTimezoneSelector = createSelector(
     [userSelectedTimeZoneSelector],
     (userSelectedTimeZone) => {
         const defaultTimezone = 'Asia/Jerusalem'; // TODO: replace constant with parameter
-        return userSelectedTimeZone ? userSelectedTimeZone : defaultTimezone;
+        return !!userSelectedTimeZone ? userSelectedTimeZone : defaultTimezone;
 });
 
 

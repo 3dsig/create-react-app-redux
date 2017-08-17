@@ -6,7 +6,7 @@ import consts from '../../constants/consts';
 
 const initialState = {
     [consts.STATE_INNER_OBJECT_NAMES.USER_EMAIL]: '',
-    [consts.STATE_INNER_OBJECT_NAMES.USER_SELECTED_TIMEZONE]: '',
+    [consts.STATE_INNER_OBJECT_NAMES.USER_SELECTED_TIMEZONE]: null,
     [consts.STATE_INNER_OBJECT_NAMES.USER_LOGIN_IN_PROGRESS]: false,
     [consts.STATE_INNER_OBJECT_NAMES.IS_RECEIVED_USER_SETTINGS]: false,
 

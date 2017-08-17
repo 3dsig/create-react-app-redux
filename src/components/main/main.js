@@ -1,13 +1,14 @@
 import React, {Component} from 'react';
+import styles from './main.css';
 import BooHeader from '../boo_header/boo_header';
+import UserMenu from "../user_menu/user_menu";
 
 class Main extends Component {
 
     render() {
         return (
-            <div>
+            <div className={styles.mainDiv}>
                 <BooHeader/>
-
             </div>
         )
     }

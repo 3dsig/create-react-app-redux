@@ -49,6 +49,7 @@
     "jwt-decode": "^2.2.0",
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
+    "react-dd-menu": "^2.0.1",
     "react-dom": "^15.5.4",
     "react-loader-advanced": "^1.6.2",
     "react-loading": "^0.1.4",
