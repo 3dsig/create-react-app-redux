@@ -2,8 +2,7 @@
  * Created by shahartaite on 09/11/2016.
  */
 import {isTokenExpired,getEmailFromToken} from './jwtHelper';
-import {browserHistory} from 'react-router';
-import httpService from 'js/http_service';
+import httpService from '../http_service';
 
 const login = (user, password, callback) => {
     return httpService.loginThroughAuth0(user, password)
@@ -52,7 +51,7 @@ const getEmail = () => {
 const logout = () => {
     // Clear user token and profile data from localStorage
     localStorage.removeItem('id_token');
-    browserHistory.push('/login');
+    //browserHistory.push('/login');  TODO: check for replacement, browserHistory is no longer supported
 };
 
 export default  {

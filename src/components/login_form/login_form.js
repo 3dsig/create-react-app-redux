@@ -3,13 +3,12 @@
  */
 import React, {Component} from 'react';
 import styles from './login_form.css'
-import userImage from 'images/login/user.svg';
-import lockImage from 'images/login/lock.svg'
+import userImage from '../../images/login/user.svg';
+import lockImage from '../../images/login/lock.svg'
 import classNames from 'classnames';
 import {connect} from 'react-redux';
-import clientAuthentication from 'js/authentication/client_authentication';
-import {userLoggedIn, userLoginInProgress, userLoginProcessEnded} from 'js/state/common/user/user_actions';
-import {browserHistory} from 'react-router';
+import clientAuthentication from '../../authentication/client_authentication';
+import {userLoggedIn, userLoginInProgress, userLoginProcessEnded} from '../../state/user/user_actions';
 
 class LoginForm extends Component {
     
@@ -42,11 +41,11 @@ class LoginForm extends Component {
     correctLogin() {
         const userEmail = clientAuthentication.getEmail();
                 this.props.userLoggedIn(userEmail);
-                browserHistory.push('/analysis');
+                // browserHistory.push('/analysis'); TODO: check for replacement, browserHistory is no longer supported
     }
     
     render() {
-        const createAccountClasses = classNames(styles.someLabel, styles.forgotPassword);
+        //const createAccountClasses = classNames(styles.someLabel, styles.forgotPassword);
         const lockIconClasses = classNames(styles.littleIcon, styles.lockIcon);
         return(
             <form
@@ -54,7 +53,7 @@ class LoginForm extends Component {
                 onSubmit={(x) => this.login(x)}>
                 
                 <div className={styles.someInputContainer}>
-                    <img src={userImage} className={styles.littleIcon}/>
+                    <img src={userImage} className={styles.littleIcon} alt=""/>
                     <input
                         type="text"
                         ref="txtUsername"
@@ -66,7 +65,7 @@ class LoginForm extends Component {
                 <hr
                     className={styles.lineBreak}/>
                 <div className={styles.someInputContainer}>
-                    <img src={lockImage} className={lockIconClasses}/>
+                    <img src={lockImage} className={lockIconClasses} alt=""/>
                     <input
                         type="password"
                         ref="txtPassword"

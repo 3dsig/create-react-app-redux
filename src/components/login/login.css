@@ -1,9 +1,12 @@
 .mainDiv{
-    /*text-align: center;*/
+  /*text-align: center;*/
+  background-color: #f1f1f1;
+  height: 100vh;
+  overflow: hidden;
 }
 .leftPart{
   width: calc(70% - 15px);
-  height:100vh;
+  height:100%;
   background-color: #303438;
   display: inline-block;
   box-shadow: 7px 0px 14px -6px rgba(0,0,0,0.61);
@@ -12,7 +15,6 @@
 .rightPart{
   min-width: 30%;
   display: inline-block;
-  background-color: #f1f1f1;
   text-align: center;
 }
 
@@ -51,11 +53,12 @@
 
 .centeringText{
   text-align: center;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 200px;
+  flex-direction: column;
+  height: 100%;
+  padding-bottom: 5%;
 }
 .leftAlign{
   text-align: left;
@@ -64,4 +67,14 @@
 .rightPartContainer{
   display: flex;
   justify-content: center;
+}
+.app_root_div{
+  background: orange;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  display: block;
+  overflow: hidden;
 }

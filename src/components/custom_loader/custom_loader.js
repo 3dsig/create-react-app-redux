@@ -16,7 +16,7 @@ class CustomLoader extends Component {
     //     return nextProps.loading !== this.props.loading;
     // }
     
-    render = () => {
+    render () {
         const spinner = <span><Spinner type="bars" color="#0da9f6"/></span>;
         const childrenDivClasses = classNames({[styles.invisible]: (!this.props.isRenderChildrenWhileShowing && this.props.loading)});
         const loaderHeightStyle = this.props.hasOwnProperty('defaultLoaderHeight') ? {height : this.props.defaultLoaderHeight} : {};
@@ -47,5 +47,5 @@ CustomLoader.propTypes = {
     foregroundStyle: PropTypes.object,
     isRenderChildrenWhileShowing: PropTypes.bool,
     children: PropTypes.node
-}
+};
 export default CustomLoader;

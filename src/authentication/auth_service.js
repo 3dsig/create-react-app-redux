@@ -3,10 +3,9 @@
  */
 import Auth0Lock from 'auth0-lock';
 import {isTokenExpired} from './jwtHelper';
-import {browserHistory} from 'react-router';
 import {store} from 'js/main';
-import {userLoggedIn} from 'js/state/common/user/user_actions';
-import logoSrc from 'images/circle_logo_login.svg';
+import {userLoggedIn} from '../state/user/user_actions';
+import logoSrc from '../images/login/circle_logo_login.svg';
 export default class AuthService {
     constructor(clientId, domain) {
         // Configure Auth0
@@ -14,8 +13,6 @@ export default class AuthService {
             auth: {
                 redirect: false,
                 params: {scope: 'openid email'},
-                
-                
             },
             theme: {
                 logo: logoSrc,
@@ -45,7 +42,7 @@ export default class AuthService {
                 store.dispatch(userLoggedIn(profile.email));
             }
         });
-        browserHistory.push('/analysis');
+        // browserHistory.push('/analysis');  TODO: check for replacement, browserHistory is no longer supported
     }
     
     login() {
@@ -84,6 +81,6 @@ export default class AuthService {
     static logout() {
         // Clear user token and profile data from localStorage
         localStorage.removeItem('id_token');
-        browserHistory.push('/login');
+        //browserHistory.push('/login');  TODO: check for replacement, browserHistory is no longer supported
     }
 }
