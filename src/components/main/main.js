@@ -3,6 +3,11 @@ import BooHeader from '../boo_header/boo_header';
 
 class Main extends Component {
 
+    componentDidMount(){
+        fetch('/measurements/test');
+        console.log('fetching')
+    }
+    
     render() {
         return (
             <div>
