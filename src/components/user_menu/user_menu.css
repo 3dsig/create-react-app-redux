@@ -1,0 +1,19 @@
+.userIcon{
+  color: white;
+  display : inline-block;
+}
+.userName{
+  color: white;
+  margin-left: 5px;
+  text-overflow: ellipsis;
+  max-width: 10vw;
+  overflow: hidden;
+  display: inline-flex;
+
+  top: 7px;
+  height: 100%;
+
+}
+.userMenuContainer{
+  cursor: pointer;
+}

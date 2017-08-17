@@ -1,0 +1,80 @@
+.mainDiv{
+  /*text-align: center;*/
+  background-color: #f1f1f1;
+  height: 100vh;
+  overflow: hidden;
+}
+.leftPart{
+  width: calc(70% - 15px);
+  height:100%;
+  background-color: #303438;
+  display: inline-block;
+  box-shadow: 7px 0px 14px -6px rgba(0,0,0,0.61);
+  position: relative;
+}
+.rightPart{
+  min-width: 30%;
+  display: inline-block;
+  text-align: center;
+}
+
+.textFirstLine{
+  color: white;
+  font-weight: 300;
+  font-size: 29px;
+  display: inline-block;
+  /*margin-top: 300px;*/
+}
+
+.textThirdLine{
+  color: white;
+  font-weight: 300;
+  font-size: 22px;
+  /*margin-left: 29vw;*/
+}
+.logoImg{
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.loginBtn{
+  width: 180px;
+  float: right;
+  margin-top: 40px;
+  background: #13baf6;
+  border: none;
+  color: white;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.loginBtn:active:focus, .loginBtn:active, .loginBtn:focus{
+  outline: none;
+}
+
+.centeringText{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  padding-bottom: 5%;
+}
+.leftAlign{
+  text-align: left;
+  display: inline-block;
+}
+.rightPartContainer{
+  display: flex;
+  justify-content: center;
+}
+.app_root_div{
+  background: orange;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  display: block;
+  overflow: hidden;
+}

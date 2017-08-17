@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom'
 import Home from '../../containers/home_container'
+import Login from '../login/login'
 import Main from '../main/main'
 
 const notFound = () => {
@@ -22,6 +23,7 @@ const App = () => (
             <Switch>
                 <Route exact path="/" component={Main} />
                 <Route exact path="/home" component={Home} />
+                <Route exact path="/login" component={Login} />
                 <Route component={notFound} /> {/* see https://stackoverflow.com/questions/32128978/react-router-no-not-found-route */}
             </Switch>
         </main>
