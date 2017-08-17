@@ -16,8 +16,8 @@ winston.emitErrs = true;
 const logger = new winston.Logger({
     transports: [
         new winston.transports.File({
-            level: config.get('hari.logger.file.level'),
-            filename: config.get('hari.logger.file.location'),
+            level: config.get('ray.logger.file.level'),
+            filename: config.get('ray.logger.file.location'),
             handleExceptions: true,
             json: false,
             maxsize: 5242880, //5MB
@@ -25,7 +25,7 @@ const logger = new winston.Logger({
             colorize: true,
         }),
         new winston.transports.Console({
-            level: config.get('hari.logger.console.level'),
+            level: config.get('ray.logger.console.level'),
             handleExceptions: true,
             json: false,
             colorize: true,

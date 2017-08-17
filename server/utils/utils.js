@@ -3,7 +3,7 @@ const consts = require('utils/consts');
 const config = require('config');
 const logHttpRequestError = (request, errorObj) => {
     const logObj = {
-        server_type : config.get('hari.server_type'),
+        server_type : config.get('ray.server_type'),
         message : errorObj.message,
         stack : errorObj.stack,
         url : request.url,
@@ -17,7 +17,7 @@ const logHttpRequestError = (request, errorObj) => {
 };
 const logGenerelError = (errorObj, errorType, otherProperties = {}) => {
     let logObj = {
-        server_type : config.get('hari.server_type'),
+        server_type : config.get('ray.server_type'),
         message : errorObj.message,
         stack : errorObj.stack,
         initiator : 'server',
@@ -29,7 +29,7 @@ const logGenerelError = (errorObj, errorType, otherProperties = {}) => {
 }
 const logSimpleTextError = (message, errorType, otherProperties = {}) => {
     let logObj = {
-        server_type : config.get('hari.server_type'),
+        server_type : config.get('ray.server_type'),
         message,
         errorType,
     }

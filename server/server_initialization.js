@@ -33,7 +33,7 @@ const initializeExpressRestServer = () => {
         app.use(favicon(path.join(__dirname, 'favicon.ico')))
         routes.setupPaths(app);
         app.use((req, res, next) => {
-            // if (req.query.token !== config.get('hari.authentication.token')) {
+            // if (req.query.token !== config.get('ray.authentication.token')) {
             //     res.status(401).end();
             // }
             //else {
@@ -52,7 +52,7 @@ const initializeExpressRestServer = () => {
         logger.info(`now servering ${path.join(__dirname, '../build/static')}`)
         app.use('/static', express.static(path.join(__dirname, '../build/static')));
         // app.use((req, res, next) => {
-        //     if (req.query.token !== config.get('hari.authentication.token')) {
+        //     if (req.query.token !== config.get('ray.authentication.token')) {
         //         res.status(401).end();
         //     }
         //     else {
@@ -67,7 +67,7 @@ const initializeExpressRestServer = () => {
 };
 const setupHttpServer = (app) => {
     var server = http.Server(app);
-    const port = config.get('hari.http_server.port');
+    const port = config.get('ray.http_server.port');
     server.listen(port);
     logger.info(`server listening on port ${port}`);
     return server;
